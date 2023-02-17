@@ -46,7 +46,7 @@ public class CommentAdapter  extends RecyclerView.Adapter<CommentAdapter.ViewHol
     @Override
     public void onBindViewHolder(@NonNull @NotNull ViewHolder holder, int position) {
 
-        Binhluan binhluan = mlist.get(position);
+        BinhLuan binhluan = mlist.get(position);
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         db.collection("User").document(binhluan.getIduser()).collection("Profile").get().addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
             @Override
