@@ -15,12 +15,12 @@ public class BinhLuan {
     private IBinhLuan callback;
     private FirebaseFirestore db;
 
-    public Binhluan(IBinhLuan callback){
+    public BinhLuan(IBinhLuan callback){
         this.callback = callback;
         db = FirebaseFirestore.getInstance();
     }
 
-    public Binhluan(String idbinhluan, String idproduct, String iduser, String rate, String noidung) {
+    public BinhLuan(String idbinhluan, String idproduct, String iduser, String rate, String noidung) {
         this.idbinhluan = idbinhluan;
         this.idproduct = idproduct;
         this.iduser = iduser;
