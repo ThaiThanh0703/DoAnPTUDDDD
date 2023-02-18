@@ -36,7 +36,7 @@ import androidx.fragment.app.FragmentTransaction;
 import com.bumptech.glide.Glide;
 import com.example.appdatdoan.MainActivity;
 import com.example.appdatdoan.R;
-import com.example.appdatdoan.View.SignInActivity;
+import com.example.appdatdoan.Views.SignInActivity;
 import com.example.appdatdoan.ultil.NetworkUtil;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -284,7 +284,7 @@ public class ProfileFragment extends Fragment {
                     public void onDateSet(DatePicker datePicker, int i, int i1, int i2) {
                         // i:năm - i1:tháng - i2:ngày
                         calendar.set(i, i1, i2);
-                        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/YYYY");
+                        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/UUUU");
                         edtDate.setText(simpleDateFormat.format(calendar.getTime()));
                     }
                 }, nam, thang, ngay);

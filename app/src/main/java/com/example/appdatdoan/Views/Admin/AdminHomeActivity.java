@@ -8,8 +8,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
 import com.example.appdatdoan.R;
-import com.example.appdatdoan.View.ChatActivity;
-import com.example.appdatdoan.View.SignInActivity;
+import com.example.appdatdoan.Views.ChatActivity;
+import com.example.appdatdoan.Views.SignInActivity;
 
 public class AdminHomeActivity extends AppCompatActivity {
 

@@ -19,7 +19,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.appdatdoan.Adapters.HoaDonAdapter;
 import com.example.appdatdoan.Models.HoaDon;
-import com.example.appdatdoan.Presenter.HoaDonPreSenter;
+import com.example.appdatdoan.Presenters.HoaDonPreSenter;
 import com.example.appdatdoan.R;
 import com.example.appdatdoan.Interfaces.HoaDonView;
 import com.example.appdatdoan.Interfaces.IClickCTHD;
@@ -120,7 +120,7 @@ public class AdminBillMainActivity extends AppCompatActivity implements HoaDonVi
             public void onSuccess(@NonNull QuerySnapshot queryDocumentSnapshots) {
                 for(QueryDocumentSnapshot d : queryDocumentSnapshots){
                     mlistUser.add(d.getString("iduser"));
-                    ArrayAdapter arrayAdapter2 = new ArrayAdapter(AdminBillMainActivity.this, R.layout.support_simple_spinner_dropdown_item, mlistUser);
+                    ArrayAdapter arrayAdapter2 = new ArrayAdapter(AdminBillMainActivity.this, androidx.appcompat.R.layout.support_simple_spinner_dropdown_item, mlistUser);
                     arrayAdapter2.setDropDownViewResource(android.R.layout.simple_list_item_1);
                     spinnerUserAdmin.setAdapter(arrayAdapter2);
                     spinnerUserAdmin.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {

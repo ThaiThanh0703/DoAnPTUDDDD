@@ -1,13 +1,13 @@
-package com.example.doanfood;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.appdatdoan;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.WindowManager;
 
-import com.example.doanfood.View.SignInActivity;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.appdatdoan.Views.SignInActivity;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 

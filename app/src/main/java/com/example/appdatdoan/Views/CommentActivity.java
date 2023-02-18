@@ -16,7 +16,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.appdatdoan.Adapters.CommentAdapter;
 import com.example.appdatdoan.Models.BinhLuan;
 import com.example.appdatdoan.Models.Product;
-import com.example.appdatdoan.Presenter.BinhLuanPresenter;
+import com.example.appdatdoan.Presenters.BinhLuanPresenter;
 import com.example.appdatdoan.R;
 import com.example.appdatdoan.Interfaces.BinhLuanView;
 import com.google.android.gms.tasks.OnSuccessListener;

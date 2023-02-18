@@ -11,11 +11,11 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.appdatdoan.Adapter.HoaDonAdapter;
+import com.example.appdatdoan.Adapters.HoaDonAdapter;
 import com.example.appdatdoan.Models.HoaDon;
-import com.example.appdatdoan.Presenter.HoaDonPreSenter;
+import com.example.appdatdoan.Presenters.HoaDonPreSenter;
 import com.example.appdatdoan.R;
-import com.example.appdatdoan.View.CTHDActivity;
+import com.example.appdatdoan.Views.CTHDActivity;
 import com.example.appdatdoan.Interfaces.HoaDonView;
 import com.example.appdatdoan.Interfaces.IClickCTHD;
 

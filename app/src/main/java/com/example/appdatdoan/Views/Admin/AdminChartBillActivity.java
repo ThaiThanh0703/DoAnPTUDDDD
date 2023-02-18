@@ -4,6 +4,7 @@ import android.Manifest;
 import android.app.DatePickerDialog;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.util.Log;
@@ -18,12 +19,13 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.app.ActivityCompat;
 
 import com.example.appdatdoan.Models.HoaDon;
-import com.example.appdatdoan.Presenter.HoaDonPreSenter;
+import com.example.appdatdoan.Presenters.HoaDonPreSenter;
 import com.example.appdatdoan.R;
 import com.example.appdatdoan.Interfaces.HoaDonView;
 import com.github.mikephil.charting.charts.BarChart;
@@ -137,11 +139,12 @@ public class AdminChartBillActivity extends AppCompatActivity implements HoaDonV
                 int thang = calendar.get(Calendar.MONTH);
                 int nam = calendar.get(Calendar.YEAR);
                 DatePickerDialog datePickerDialog = new DatePickerDialog(AdminChartBillActivity.this, new DatePickerDialog.OnDateSetListener() {
+                    @RequiresApi(api = Build.VERSION_CODES.N)
                     @Override
                     public void onDateSet(DatePicker datePicker, int i, int i1, int i2) {
                         // i:năm - i1:tháng - i2:ngày
                         calendar.set(i, i1, i2);
-                        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/YYYY");
+                        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/UUUU");
                         edtFromDate.setText(simpleDateFormat.format(calendar.getTime()));
 
                     }
@@ -162,7 +165,7 @@ public class AdminChartBillActivity extends AppCompatActivity implements HoaDonV
                     public void onDateSet(DatePicker datePicker, int i, int i1, int i2) {
                         // i:năm - i1:tháng - i2:ngày
                         calendar.set(i, i1, i2);
-                        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/YYYY");
+                        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/UUUU");
                         edtToDate.setText(simpleDateFormat.format(calendar.getTime()));
                     }
                 }, nam, thang, ngay);
@@ -493,7 +496,7 @@ public class AdminChartBillActivity extends AppCompatActivity implements HoaDonV
 
         mlistYear = new ArrayList<>();
         mlistYear.add("2023");
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(this, R.layout.support_simple_spinner_dropdown_item, mlistYear);
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(this, androidx.appcompat.R.layout.support_simple_spinner_dropdown_item, mlistYear);
         spinnerDoanhthu.setAdapter(arrayAdapter);
         mlist = new ArrayList<>();
         hoaDonPreSenter = new HoaDonPreSenter(this);

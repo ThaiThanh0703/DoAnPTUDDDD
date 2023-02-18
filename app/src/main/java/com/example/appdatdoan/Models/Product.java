@@ -2,7 +2,7 @@ package com.example.appdatdoan.Models;
 
 import androidx.annotation.NonNull;
 
-import com.example.doanfood.my_interface.IProduct;
+import com.example.appdatdoan.Interfaces.IProduct;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;

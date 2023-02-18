@@ -29,8 +29,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.appdatdoan.Models.HoaDon;
 import com.example.appdatdoan.Models.Product;
-import com.example.appdatdoan.Presenter.GioHangPresenter;
-import com.example.appdatdoan.Presenter.HoaDonPreSenter;
+import com.example.appdatdoan.Presenters.GioHangPresenter;
+import com.example.appdatdoan.Presenters.HoaDonPreSenter;
 import com.example.appdatdoan.R;
 import com.example.appdatdoan.Interfaces.GioHangView;
 import com.example.appdatdoan.Interfaces.HoaDonView;

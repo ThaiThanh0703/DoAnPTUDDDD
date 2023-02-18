@@ -18,7 +18,7 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.appdatdoan.Models.User;
-import com.example.appdatdoan.Presenter.UserPresenter;
+import com.example.appdatdoan.Presenters.UserPresenter;
 import com.example.appdatdoan.R;
 import com.example.appdatdoan.Interfaces.IClickCTHD;
 import com.example.appdatdoan.Interfaces.UserView;

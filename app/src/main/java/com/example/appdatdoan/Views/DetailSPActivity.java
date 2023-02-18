@@ -20,9 +20,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.appdatdoan.Adapters.BinhLuanAdapter;
 import com.example.appdatdoan.Models.BinhLuan;
 import com.example.appdatdoan.Models.Product;
-import com.example.appdatdoan.Presenter.BinhLuanPresenter;
-import com.example.appdatdoan.Presenter.GioHangPresenter;
+import com.example.appdatdoan.Presenters.BinhLuanPresenter;
+import com.example.appdatdoan.Presenters.GioHangPresenter;
 import com.example.appdatdoan.R;
+import com.example.appdatdoan.MainActivity;
 import com.example.appdatdoan.Interfaces.BinhLuanView;
 import com.example.appdatdoan.Interfaces.GioHangView;
 import com.example.appdatdoan.Interfaces.IClickCTHD;
@@ -58,7 +59,7 @@ public class DetailSPActivity extends AppCompatActivity implements BinhLuanView,
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
 
     private BinhLuanPresenter binhLuanPresenter;
-    private ArrayList<Binhluan> mListBinhluan;
+    private ArrayList<BinhLuan> mListBinhluan;
     private BinhLuanAdapter adapter;
     private Product product;
 
@@ -271,7 +272,7 @@ public class DetailSPActivity extends AppCompatActivity implements BinhLuanView,
 
     @Override
     public void getDataBinhLuan(String idbinhluan, String idproduct, String iduser, String rate, String noidung) {
-        mListBinhluan.add(new Binhluan(idbinhluan, idproduct, iduser, rate, noidung));
+        mListBinhluan.add(new BinhLuan(idbinhluan, idproduct, iduser, rate, noidung));
         adapter = new BinhLuanAdapter(DetailSPActivity.this, mListBinhluan, new IClickCTHD() {
             @Override
             public void onClickCTHD(int pos) {

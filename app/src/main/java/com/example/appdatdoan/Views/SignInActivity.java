@@ -19,7 +19,7 @@ import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 
 import com.example.appdatdoan.Models.Admin;
 import com.example.appdatdoan.R;
-import com.example.appdatdoan.View.Admin.AdminHomeActivity;
+import com.example.appdatdoan.Views.Admin.AdminHomeActivity;
 import com.example.appdatdoan.ultil.MyReceiver;
 import com.example.appdatdoan.ultil.NetworkUtil;
 import com.google.android.gms.tasks.OnCompleteListener;

@@ -1,8 +1,8 @@
 package com.example.appdatdoan.Presenters;
 
-import com.example.doanfood.Models.Product;
-import com.example.doanfood.my_interface.IProduct;
-import com.example.doanfood.my_interface.ProductView;
+import com.example.appdatdoan.Models.Product;
+import com.example.appdatdoan.Interfaces.IProduct;
+import com.example.appdatdoan.Interfaces.ProductView;
 
 public class ProductPresenter implements IProduct {
 
