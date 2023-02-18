@@ -27,7 +27,7 @@ import com.example.appdatdoan.ChatBot.MsgModal;
 import com.example.appdatdoan.ChatBot.RetrofitAPI;
 import com.example.appdatdoan.Models.Chat;
 import com.example.appdatdoan.Models.User;
-import com.example.appdatdoan.Notification.MyApplication;
+import com.example.appdatdoan.Notifiaction.MyApplication;
 import com.example.appdatdoan.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;

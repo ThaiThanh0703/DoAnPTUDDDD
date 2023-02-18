@@ -29,8 +29,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 import androidx.core.app.ActivityCompat;
 
-import com.example.doanfood.Models.Product;
-import com.example.doanfood.R;
+import com.example.appdatdoan.Models.Product;
+import com.example.appdatdoan.R;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.firestore.DocumentReference;
