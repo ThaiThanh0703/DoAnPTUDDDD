@@ -6,7 +6,7 @@
     tools:context=".fragment.FavoriteFragment">
 
     <TextView
-        android:background="#FF5722"
+        android:background="#fe4254"
         android:id="@+id/titlefavorite"
         android:gravity="center"
         android:layout_width="match_parent"
@@ -44,7 +44,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="22dp"
-        android:textColor="#006400"
+        android:textColor="#FFFFFFFF"
         android:textStyle="bold"
         android:layout_centerHorizontal="true"/>
 

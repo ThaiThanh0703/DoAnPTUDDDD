@@ -9,7 +9,7 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:id="@+id/img_item_user"
-        android:src="@mipmap/ic_launcher"/>
+        android:src="@drawable/user"/>
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="12dp"

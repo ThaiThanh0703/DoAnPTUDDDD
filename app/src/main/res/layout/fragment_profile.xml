@@ -51,12 +51,13 @@
             android:layout_width="155dp"
             android:layout_height="155dp"
             android:src="#FFFFFF"/>
+
         <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_centerInParent="true"
             android:id="@+id/img_avatar"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:src="@drawable/profile"/>
+            android:layout_centerInParent="true"
+            android:src="@drawable/user" />
         <ImageView
             android:layout_marginStart="-30dp"
             android:layout_marginTop="-25dp"
@@ -80,7 +81,7 @@
                 android:textColor="#2196F3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="nguyenchinh992000@gmail.com"/>
+                android:text="DoAnPTUDTTBDD@gmail.com"/>
 
             <LinearLayout
                 android:layout_gravity="center"

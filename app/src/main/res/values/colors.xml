@@ -9,5 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="colorGray">#EEEEEE</color>
     <color name="Orange">#FF5722</color>
-
+    <color name="logocolor">#fe4254</color>
 </resources>
