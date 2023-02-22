@@ -15,16 +15,14 @@ import com.example.appdatdoan.R;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.firebase.firestore.DocumentSnapshot;
-import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
+
 
 import org.jetbrains.annotations.NotNull;
 
 public class NotifyFragment extends Fragment implements OnMapReadyCallback {
-    private Toolbar toolbar;
-    private FirebaseFirestore db = FirebaseFirestore.getInstance();;
-    private TextView txtdiachi,txtsdt,txtnoidung;
+
 
 
     @Override
@@ -32,24 +30,6 @@ public class NotifyFragment extends Fragment implements OnMapReadyCallback {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v =  inflater.inflate(R.layout.fragment_notify, container, false);
-
-        toolbar = v.findViewById(R.id.toolbar);
-        txtdiachi = v.findViewById(R.id.txtdiachi);
-        txtsdt = v.findViewById(R.id.txtsdt);
-        txtnoidung = v.findViewById(R.id.txtnoidung);
-
-        db.collection("ThongTinCuaHang").document("FQaw4inRmOCfsdotmL5W")
-                .get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
-            @Override
-            public void onSuccess(@NonNull DocumentSnapshot documentSnapshot) {
-
-                txtdiachi.setText("Địa chỉ : "+documentSnapshot.getString("diachi"));
-                txtsdt.setText("Liên hệ : "+documentSnapshot.getString("sdt"));
-                txtnoidung.setText("Nội Dung : "+documentSnapshot.getString("noidung"));
-
-
-            }
-        });
 
         // GG maps
         SupportMapFragment mapFragment = (SupportMapFragment) getChildFragmentManager()
@@ -60,18 +40,11 @@ public class NotifyFragment extends Fragment implements OnMapReadyCallback {
     }
 
     @Override
-    public void onMapReady(@NonNull @NotNull GoogleMap googleMap) {
-        db.collection("ThongTinCuaHang").document("FQaw4inRmOCfsdotmL5W").get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
-            @Override
-            public void onSuccess(DocumentSnapshot documentSnapshot) {
-                txtdiachi.setText("Địa chỉ : "+documentSnapshot.getString("diachi"));
-                txtsdt.setText("Liên hệ : "+documentSnapshot.getString("sdt"));
-                txtnoidung.setText("Nội Dung : "+documentSnapshot.getString("noidung"));
+    public void onMapReady( GoogleMap googleMap) {
+      googleMap.addMarker(new MarkerOptions().position(new LatLng(106.8008601,10.8700089)).title("Marker"));
                 //đọc vị trí gg map
 
             }
-        });
-    }
 
     @Override
     public void onSaveInstanceState(@NonNull @NotNull Bundle outState) {

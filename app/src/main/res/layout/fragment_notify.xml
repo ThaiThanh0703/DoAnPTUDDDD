@@ -8,7 +8,7 @@
         android:id="@+id/toolbar"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         style="@style/ThemeOverlay.AppCompat.Dark"
-        android:background="#FF5722"
+        android:background="@color/red_tomato"
         android:layout_width="match_parent"
         android:layout_height="40dp"/>
 
@@ -21,7 +21,7 @@
         android:textAllCaps="true"
         android:textColor="#ff0000"
         android:textSize="18sp"
-        android:text="Liên hệ: Afforda Company"
+        android:text="Liên hệ: UIT"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
     <TextView
@@ -32,7 +32,7 @@
         android:textAllCaps="true"
         android:textColor="#008000"
         android:textSize="18sp"
-        android:text="Địa Chỉ store: Hà Nội"
+        android:text="Địa Chỉ store: Linh Trung, Thủ Đức"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
     <TextView

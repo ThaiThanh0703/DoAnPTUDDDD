@@ -2,8 +2,8 @@
     <!-- Base application theme. -->
     <style name="Theme.AppDatDoAn" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/red_potato</item>
-        <item name="colorPrimaryVariant">@color/red_potato</item>
+        <item name="colorPrimary">@color/red_tomato</item>
+        <item name="colorPrimaryVariant">@color/red_tomato</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">#008EFF</item>

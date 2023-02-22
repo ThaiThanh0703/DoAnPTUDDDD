@@ -90,14 +90,14 @@
                         android:textSize="16sp"/>
                     <TextView
                         android:id="@+id/tv_gia_detail"
-                        android:textColor="#FF5722"
+                        android:textColor="@color/red_tomato"
                         android:textStyle="bold"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="76.000"
                         android:textSize="16sp"/>
                     <TextView
-                        android:textColor="#FF5722"
+                        android:textColor="@color/red_tomato"
                         android:textStyle="bold"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -164,7 +164,7 @@
                     android:layout_height="wrap_content"
                     android:text="Mô tả"
                     android:textStyle="bold"
-                    android:textColor="#FF5722"/>
+                    android:textColor="@color/red_tomato"/>
 
                 <TextView
                     android:id="@+id/tv_mota_detail"

@@ -59,14 +59,15 @@
                 android:layout_marginStart="-25dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
+
                 <TextView
-                    android:layout_centerInParent="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
                     android:text="Chi tiết hóa đơn"
+                    android:textColor="@color/red_tomato"
                     android:textSize="20sp"
-                    android:textColor="#FF5722"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
             </RelativeLayout>
 
         </LinearLayout>
@@ -237,7 +238,7 @@
             android:layout_height="2dp"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
-            android:background="#FF5722" />
+            android:background="@color/red_tomato" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
