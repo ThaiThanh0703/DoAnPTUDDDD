@@ -2,8 +2,8 @@
     <!-- Base application theme. -->
     <style name="Theme.AppDatDoAn" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">#FF5722</item>
-        <item name="colorPrimaryVariant">#FF5722</item>
+        <item name="colorPrimary">@color/red_potato</item>
+        <item name="colorPrimaryVariant">@color/red_potato</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">#008EFF</item>
@@ -27,5 +27,13 @@
         <item name="android:progressDrawable">@drawable/ic_star_on</item>
         <item name="android:minHeight">10dp</item>
         <item name="android:maxHeight">10dp</item>
+    </style>
+
+    <style name="EditText.Login" parent="Widget.AppCompat.EditText">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColorHint">@android:color/darker_gray</item>
+        <item name="colorAccent">@color/blue</item>
+        <item name="colorControlNormal">@color/blue</item>
+        <item name="colorControlActivated">@color/blue</item>
     </style>
 </resources>

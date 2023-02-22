@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/background_signin_user">
+    android:background="@drawable/freshfood_logo">
 
 <ImageView
     android:layout_width="130dp"
@@ -27,7 +28,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="65dp"
                 android:layout_margin="15dp"
-                android:background="@android:color/background_light">
+                android:background="@android:color/background_light" >
 
                 <EditText
                     android:id="@+id/edt_email_user"
@@ -35,8 +36,10 @@
                     android:layout_height="65dp"
                     android:background="@drawable/button"
                     android:drawableRight="@drawable/ic_email"
+
                     android:hint="Nhập Email"
-                    android:singleLine="true" />
+                    android:singleLine="true"
+                    tools:ignore="SpeakableTextPresentCheck" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -53,7 +56,8 @@
                     android:background="@drawable/button"
                     android:hint="Nhập Mật Khẩu"
                     android:inputType="textPassword"
-                    android:singleLine="true" />
+                    android:singleLine="true"
+                    tools:ignore="SpeakableTextPresentCheck" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
@@ -76,7 +80,7 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/button"
-                app:backgroundTint="#F44336"
+                app:backgroundTint="@color/red_potato"
                 android:elevation="8dp"
                 android:text="Đăng Nhập" />
             <Button
