@@ -19,9 +19,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_food2"
+        android:icon="@mipmap/ic_logo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_food2_round"
+        android:roundIcon="@mipmap/ic_logo_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppDatDoAn"
         android:usesCleartextTraffic="true"
@@ -35,7 +35,6 @@
             android:taskAffinity=""
             android:excludeFromRecents="true"/>
         <activity android:name="com.example.appdatdoan.Views.MessageActivity" />
-        <activity android:name="com.example.appdatdoan.Views.DanhGiaActivity" />
         <activity android:name="com.example.appdatdoan.Views.FavoriteActivity" />
         <activity android:name="com.example.appdatdoan.Views.CommentActivity" />
         <activity android:name="com.example.appdatdoan.Views.DetailSPActivity" />
