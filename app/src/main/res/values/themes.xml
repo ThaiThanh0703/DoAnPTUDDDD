@@ -18,8 +18,8 @@
     </style>
 
     <style name="CollapsingToolbarLayoutExpandedTextStyle" parent="AppTheme">
-        <item name="android:textColor">@android:color/white</item>
-        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/red_tomato</item>
+        <item name="android:textSize">25dp</item>
         <item name="android:textStyle">bold</item>
     </style>
 
